@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+</head>
+
+<body>
+    <h1>Pokedex</h1>
+    <ul>
+        <?php foreach ($pokemon as $monster) : ?>
+            <li><a href="/pokemon?id=<?= $monster->id; ?>">
+                    <?= $monster->name; ?>
+                </a></li>
+        <?php endforeach; ?>
+    </ul>
+</body>
+
+</html>
