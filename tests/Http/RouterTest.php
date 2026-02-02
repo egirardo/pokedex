@@ -13,9 +13,9 @@ class RouterTest extends TestCase
     {
         $router = new Router();
 
-        $router->get('test', function () {
-            return 'Test route';
-        });
+        $router->define([
+            'test' => __DIR__ . '/../controllers/pokedex.php'
+        ]);
 
         ob_start();
         $router->direct('test');

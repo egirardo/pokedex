@@ -16,10 +16,6 @@ class Router
         $this->routes = $routes;
     }
 
-    public function get(string $uri, callable $action): void
-    {
-        $this->routes[$uri] = $action;
-    }
     public function direct(string $uri)
     {
         if (array_key_exists($uri, $this->routes)) {
