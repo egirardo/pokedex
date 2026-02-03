@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-use App\Http\Router;
 use App\Database\Connection;
 use App\Database\QueryBuilder;
 
